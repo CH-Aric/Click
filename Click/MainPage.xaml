@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Click.MainPage">
+
+    <TableView>
+        <TableSection>
+            <ViewCell>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="The factory must grow!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+            </ViewCell>
+            <ViewCell>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="0" x:Name="powerDisplay" HorizontalOptions="FillAndExpand"/>
+                    <Label Text="0" x:Name="powerStateDisplay" HorizontalOptions="FillAndExpand"/>
+                    <Button x:Name="pButton" Text="Power:" Clicked="onClickPower" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                </StackLayout>
+            </ViewCell>
+            <ViewCell>
+                <StackLayout Orientation="Horizontal">
+                    <Button x:Name="iButton" Text="0/16" Clicked="onClickIron" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                    <Button x:Name="cButton" Text="0/16" Clicked="onClickCopper" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                    <Button x:Name="fButton" Text="0/16" Clicked="onClickCoal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                    <Button x:Name="wButton" Text="0/16" Clicked="onClickWater" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                </StackLayout>
+            </ViewCell>
+            <ViewCell>
+                <StackLayout Orientation="Horizontal">
+                    <Label x:Name="iDisplay" Text="Iron:"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                    <Label x:Name="cDisplay" Text="Copper:" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                    <Label x:Name="fDisplay" Text="Coal:" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                    <Label x:Name="wDisplay" Text="Water:"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                </StackLayout>
+            </ViewCell>
+            <ViewCell>
+                <StackLayout Orientation="Horizontal">
+                    <Label />
+                </StackLayout>
+            </ViewCell>
+        </TableSection>
+    </TableView>
+</ContentPage>
