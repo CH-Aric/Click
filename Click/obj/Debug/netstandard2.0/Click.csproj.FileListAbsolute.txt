@@ -1,8 +1,8 @@
+D:\Workshop\VB-Projects\Click\Click\bin\Debug\netstandard2.0\Resources\p.png
 D:\Workshop\VB-Projects\Click\Click\bin\Debug\netstandard2.0\Click.deps.json
 D:\Workshop\VB-Projects\Click\Click\bin\Debug\netstandard2.0\Click.dll
 D:\Workshop\VB-Projects\Click\Click\bin\Debug\netstandard2.0\ref\Click.dll
 D:\Workshop\VB-Projects\Click\Click\bin\Debug\netstandard2.0\Click.pdb
-D:\Workshop\VB-Projects\Click\Click\obj\Debug\netstandard2.0\Click.csprojAssemblyReference.cache
 D:\Workshop\VB-Projects\Click\Click\obj\Debug\netstandard2.0\App.xaml.g.cs
 D:\Workshop\VB-Projects\Click\Click\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 D:\Workshop\VB-Projects\Click\Click\obj\Debug\netstandard2.0\Click.csproj.CoreCompileInputs.cache
@@ -12,3 +12,4 @@ D:\Workshop\VB-Projects\Click\Click\obj\Debug\netstandard2.0\XamlC.stamp
 D:\Workshop\VB-Projects\Click\Click\obj\Debug\netstandard2.0\Click.dll
 D:\Workshop\VB-Projects\Click\Click\obj\Debug\netstandard2.0\ref\Click.dll
 D:\Workshop\VB-Projects\Click\Click\obj\Debug\netstandard2.0\Click.pdb
+D:\Workshop\VB-Projects\Click\Click\obj\Debug\netstandard2.0\Click.csprojAssemblyReference.cache

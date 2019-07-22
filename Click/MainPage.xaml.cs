@@ -14,13 +14,14 @@ namespace Click
         public MainPage()
         {
             InitializeComponent();
-
+            updateUI();
         }
         public void onClickPower(object sender,EventArgs e)
         {
-            if (ClientData.points[3] > 1)
+            if (ClientData.points[3] > 0)
             {
                 ClientData.consumePoint("Fuel");
+                ClientData.consumePoint("Water");
                 ClientData.Rotate("Power");
             }
             updateUI();
@@ -48,11 +49,11 @@ namespace Click
         public void updateUI()
         { //"0-Power","1-Iron","2-Copper","3-Fuel","4-Water"
             powerDisplay.Text ="Power:"+ ClientData.points[0];
-            iButton.Text = ClientData.rotationState[1] + "/" + ClientData.rotationPer[1];
-            wButton.Text = ClientData.rotationState[4] + "/" + ClientData.rotationPer[4];
-            fButton.Text = ClientData.rotationState[3] + "/" + ClientData.rotationPer[3];
-            cButton.Text = ClientData.rotationState[2] + "/" + ClientData.rotationPer[2];
-            pButton.Text = ClientData.rotationState[0] + "/" + ClientData.rotationPer[0];
+            iButton.Text = ""+(Math.Truncate(((0.01+ClientData.rotationState[1])/ClientData.rotationPer[1])*100))+"%";
+            wButton.Text = ""+(Math.Truncate(((0.01+ClientData.rotationState[4])/ClientData.rotationPer[4])*100))+"%";
+            fButton.Text = ""+(Math.Truncate(((0.01+ClientData.rotationState[3])/ClientData.rotationPer[3])*100))+"%";
+            cButton.Text = ""+(Math.Truncate(((0.01+ClientData.rotationState[2])/ClientData.rotationPer[2])*100))+"%";
+            pButton.Text = ""+(Math.Truncate(((0.01+ClientData.rotationState[0])/ClientData.rotationPer[0])*100))+"%";
             iDisplay.Text = "Iron:" + ClientData.points[1];
             wDisplay.Text="Water:"+ ClientData.points[4];
             fDisplay.Text="Fuel:"+ ClientData.points[3];
