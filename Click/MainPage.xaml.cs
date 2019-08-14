@@ -46,6 +46,11 @@ namespace Click
             ClientData.Rotate("Water");
             updateUI();
         }
+        public void onClickStone(object sender, EventArgs e)
+        {
+            ClientData.Rotate("Stone");
+            updateUI();
+        }
         public void updateUI()
         { //"0-Power","1-Iron","2-Copper","3-Fuel","4-Water"
             powerDisplay.Text ="Power:"+ ClientData.points[0];

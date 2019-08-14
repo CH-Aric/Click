@@ -6404,14 +6404,17 @@ namespace Click.Droid
 			// aapt resource value: 0x7F010006
 			public const int Power = 2130771974;
 			
+			// aapt resource value: 0x7F010007
+			public const int stone = 2130771975;
+			
 			// aapt resource value: 0x7F09006F
 			public const int tooltip_frame_dark = 2131296367;
 			
 			// aapt resource value: 0x7F090070
 			public const int tooltip_frame_light = 2131296368;
 			
-			// aapt resource value: 0x7F010007
-			public const int Water = 2130771975;
+			// aapt resource value: 0x7F010008
+			public const int Water = 2130771976;
 			
 			static Drawable()
 			{
@@ -7496,7 +7499,10 @@ namespace Click.Droid
 			public const int Power = 2130968584;
 			
 			// aapt resource value: 0x7F040009
-			public const int Water = 2130968585;
+			public const int stone = 2130968585;
+			
+			// aapt resource value: 0x7F040010
+			public const int Water = 2130968592;
 			
 			static Mipmap()
 			{

@@ -12,24 +12,25 @@
                 <ColumnDefinition Width="10*"/>
                 <ColumnDefinition Width="10*"/>
                 <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="10*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="60"/><!-- Factory must grow announcement-->
-                <RowDefinition Height="50"/><!-- Power Button and level-->
-                <RowDefinition Height="50"/><!-- Resource Gathering-->
-                <RowDefinition Height="50"/><!-- Current Resource pool-->
-                <RowDefinition Height="5"/> <!-- Breakup between manual and automated resource production-->
-                <RowDefinition Height="50"/><!-- -->
-                <RowDefinition Height="50"/><!-- -->
-                <RowDefinition Height="5"/> <!-- Divider between manual and automated resource production-->
-                <RowDefinition Height="50"/><!-- Purchase Miners Buttons-->
-                <RowDefinition Height="50"/><!-- Current Miner production Displays-->
-                <RowDefinition Height="5"/> <!-- Divider between Automated Miners and Smelters-->
-                <RowDefinition Height="50"/><!-- Manual Smelting Buttons-->
-                <RowDefinition Height="50"/><!-- Current Smelter Storage-->
-                <RowDefinition Height="5"/> <!-- Divider between Automated Miners and Smelters-->
-                <RowDefinition Height="50"/><!-- Purchase Automated Smelters Buttons-->
-                <RowDefinition Height="50"/><!-- Current Automated Smelters Production Displas-->
+                <RowDefinition Height="60"/><!--0 Factory must grow announcement-->
+                <RowDefinition Height="50"/><!--1 Power Button and level-->
+                <RowDefinition Height="50"/><!--2 Resource Gathering-->
+                <RowDefinition Height="50"/><!--3 Current Resource pool-->
+                <RowDefinition Height="5"/> <!--4 Breakup between manual and automated resource production-->
+                <RowDefinition Height="50"/><!--5 -->
+                <RowDefinition Height="50"/><!--6 -->
+                <RowDefinition Height="5"/> <!--7 Divider between manual and automated resource production-->
+                <RowDefinition Height="50"/><!--8 Purchase Miners Buttons-->
+                <RowDefinition Height="50"/><!--9 Current Miner production Displays-->
+                <RowDefinition Height="5"/> <!--10 Divider between Automated Miners and Smelters-->
+                <RowDefinition Height="50"/><!--11 Manual Smelting Buttons-->
+                <RowDefinition Height="50"/><!--12 Current Smelter Storage-->
+                <RowDefinition Height="5"/> <!--13 Divider between Automated Miners and Smelters-->
+                <RowDefinition Height="50"/><!--14 Purchase Automated Smelters Buttons-->
+                <RowDefinition Height="50"/><!--15 Current Automated Smelters Production Displas-->
             </Grid.RowDefinitions>
             <!-- Power goes here-->
             <BoxView Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" BackgroundColor="White"/>
@@ -41,6 +42,10 @@
             <Label Text="0" x:Name="powerStateDisplay" Grid.Column="2" Grid.Row="1"/>
             <Label x:Name="pButton" Grid.Column="3" Grid.Row="1" VerticalTextAlignment="End"/>
             <ImageButton Source="@mipmap/Power" Clicked="onClickPower" Grid.Column="3" Grid.Row="1" BackgroundColor="Transparent"/>
+
+            <Label x:Name="wButton" VerticalTextAlignment="End" Grid.Column="4" Grid.Row="1"/>
+            <ImageButton  Source="@mipmap/Water" Clicked="onClickWater"   Grid.Column="4" Grid.Row="1" BackgroundColor="Transparent" HorizontalOptions="End"/>
+
             <!-- Resource rendering goes here-->
 
             <BoxView Grid.Column="0" Grid.Row="2" BackgroundColor="White"/>
@@ -50,11 +55,11 @@
             <Label x:Name="iButton" VerticalTextAlignment="End" Grid.Column="0" Grid.Row="2"/>
             <Label x:Name="cButton" VerticalTextAlignment="End" Grid.Column="1" Grid.Row="2"/>
             <Label x:Name="fButton" VerticalTextAlignment="End" Grid.Column="2" Grid.Row="2"/>
-            <Label x:Name="wButton" VerticalTextAlignment="End" Grid.Column="3" Grid.Row="2"/>
+            <Label x:Name="sButton" VerticalTextAlignment="End" Grid.Column="4" Grid.Row="1"/>
             <ImageButton  Source="@mipmap/Iron" Clicked="onClickIron"     Grid.Column="0" Grid.Row="2" BackgroundColor="Transparent" HorizontalOptions="End"/>
             <ImageButton  Source="@mipmap/Copper" Clicked="onClickCopper" Grid.Column="1" Grid.Row="2" BackgroundColor="Transparent" HorizontalOptions="End"/>
             <ImageButton  Source="@mipmap/Coal" Clicked="onClickCoal"     Grid.Column="2" Grid.Row="2" BackgroundColor="Transparent" HorizontalOptions="End"/>
-            <ImageButton  Source="@mipmap/Water" Clicked="onClickWater"   Grid.Column="3" Grid.Row="2" BackgroundColor="Transparent" HorizontalOptions="End"/>
+            <ImageButton  Source="@mipmap/stone" Clicked="onClickStone"   Grid.Column="4" Grid.Row="2" BackgroundColor="Transparent" HorizontalOptions="End"/>
 
 
             <!-- Resource buttons go here-->

@@ -531,3 +531,5 @@ D:\Workshop\VB-Projects\Click\Click.Android\obj\Debug\90\res\drawable\iron.png
 D:\Workshop\VB-Projects\Click\Click.Android\obj\Debug\90\res\drawable\power.png
 D:\Workshop\VB-Projects\Click\Click.Android\obj\Debug\90\res\drawable\water.png
 D:\Workshop\VB-Projects\Click\Click.Android\obj\Debug\90\android\assets\System.Runtime.dll
+D:\Workshop\VB-Projects\Click\Click.Android\obj\Debug\90\res\mipmap-mdpi\stone.png
+D:\Workshop\VB-Projects\Click\Click.Android\obj\Debug\90\res\drawable\stone.png
